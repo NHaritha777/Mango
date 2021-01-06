@@ -5,7 +5,7 @@ const Body = Matter.Body;
 const Constraint= Matter.Constraint;
 
 var mango1,mango2,mango3,mango4,mango5,mango6,mango7,mango8,mango9,mango10
-var mango11,ground,tree,launcherObj,stone;
+var mango11,ground,tree,launcherObj,stone,boy;
 var launchingForce = 100;
 
 function preload(){
@@ -99,7 +99,7 @@ function keyPressed(){
   }
 }
 
-function detectollision (lstone, mango) {
+function detectollision(lstone, mango){
 
   mangoBodyPosition= mango.body.position;
   stoneBodyPosition= lstone.body.position;
